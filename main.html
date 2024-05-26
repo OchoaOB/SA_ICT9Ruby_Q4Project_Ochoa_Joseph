@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My JFOLIO</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            background-image: url('https://44.media.tumblr.com/ab7885e59b615c47bbe3006b394f7b7d/d93e0e941a82cbfb-6c/s2048x3072_f1/34ea6d177c88d7601f65c7cebff023319d001427.gif');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.7);
+            transition: background-color 0.5s ease;
+        }
+
+        .navbar a {
+            color: #fff;
+            transition: color 0.5s ease;
+        }
+
+        .navbar a:hover {
+            color: #17a2b8;
+        }
+
+        #profile {
+            background-color: rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 20px white;
+            text-align: center;
+            padding: 20px;
+            margin: 0 auto;
+            width: 30%;
+            max-width: 400px;
+            border-radius: 10px;
+        }
+
+        #profile img {
+            opacity: 1;
+            max-width: 150px;
+            border-radius: 50%;
+        }
+
+        #footer {
+            position: absolute;
+            bottom: 0;
+            height: 21.5%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 10px 0;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: #fff;
+            transition: color 0.5s ease;
+            padding: 5px 10px;
+            margin-right: 10px;
+        }
+
+        .nav-link:hover {
+            color: #17a2b8;
+        }
+
+        .nav-item {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-item img {
+            margin-left: 100px;
+        }
+
+        .nav-button {
+            text-decoration: none;
+            color: #fff;
+            background-color: transparent;
+            border: none;
+            padding: 5px 10px;
+            margin-right: 10px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .nav-button:hover {
+            color: #17a2b8;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+        }
+
+        .navbar-form {
+            flex: 1;
+            margin-right: 10px;
+        }
+
+        .form-control {
+            width: auto;
+            padding: 0.375rem 0.75rem;
+            font-size: 0.875rem;
+            line-height: 1.5;
+        }
+
+        .search-input {
+            width: 150px;
+        }
+
+        .follow-us {
+            color: #fff;
+            margin-bottom: 0;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .social-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin: 0 10px;
+            overflow: hidden;
+        }
+
+        .social-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        #logo {
+            margin-left: 100px;
+        }
+        #profileimg {
+            width:px;
+            max-width: 5000px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-sm p-2">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col">
+                    <!-- Logo -->
+                    <img src="logo.png" alt="logo" id="logo" class="w-25">
+                </div>
+                <div class="col">
+                    <!-- Navbar text -->
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <button class="nav-button" onclick="window.location.href='StaAna_ICT9Ruby_Q1Project_Ochoa_Joseph.html'" id="q"><strong>First Quarter</strong></button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-button" onclick="window.location.href='https://ochoaob.github.io/OchoaOB-ICT9Ruby_Q2PROJ_Ochoa_Joseph/'" id="q"><strong>Second Quarter</strong></button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-button" onclick="window.location.href='vogue.html'" id="q"><strong>Third Quarter</strong></button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-button" onclick="window.location.href='index.html'" id="q"><strong>What's Next</strong></button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-button" onclick="window.location.href='main.html'" id="q"><strong>My Profile</strong></button>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Search bar -->
+                <div class="col navbar-form">
+                    <form class="d-flex justify-content-end">
+                        <input class="form-control search-input me-2" type="search" placeholder="Enter a keyword" aria-label="Search">
+                        <button class="btn btn-info" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container bg-black rounded p-3 text-center text-light mt-5" id="profile">
+        <h3>Profile</h3>
+        <img src="Profile.PNG" class="rounded-circle img img-thumbnail" id="profileimg">
+        <h5 class="mt-3">This portfolio shows my project for each quarter for this school year 2023-2024. This covers the following programming languages: Basic HTML, Cascading Style Sheet, Bootstrap & Javascript. You may click on the navigation links to check my project. </h5>
+    </div>
+
+    <footer class="text-light text-center py-4" id="footer">
+        <div class="container">
+            <h4 class="follow-us">FOLLOW US</h4>
+            <div class="social-icons">
+                <div class="social-icon"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAclBMVEU6VZ/////p7PR8jLzz9fkwTpySn8czUJ2ElMItTJs7WKOpss+msNAnSJnK0eT6+v2Xps3f4+9cca5KY6fU2upSaalDXaVme7SKmcScqMvP1OTj5vDs7/XGzeIiRZhZca+1vtqxutW+x+B2h7mAjrxugLacEYxHAAADBklEQVR4nO3baXLiMBBAYQdsFDkGwr4MJEAy97/iMPmdOLJUortV7x3Apa8Mkhe5qoiIiIiIiIiIiIiIiIiI1Oecaxrfm5MeY3TOT5vtZvexP3S97Y0SfbM8HBeLP6NTPe/t6TyVHmtE/u29W9Tzp6Bm5oSuWnanMJxJoWt3lwE8e0K3G3T+zAn9/e830GdL6J/Xg32mhO516A/UltC1L4HLg1GhW52jfGaEbjd8ijEldMtRLNCG0K1iJlFLwvYWDzQhdC8JQAtCP6nLFjYf8bOMCaHbzJKA+oXVPg2oX7hJWChMCN0kEaheuI26nzAk9F0qULuwTQYqFzapE6l64fRYunCVdL1mQNjs4x5c2BH62CcXZoSb6EcXRoTuOXm5v3dULPTdgL9hfbwcXr9rrPj9oQ9+B1PPxtXU++a7FAOrJnSiWY9VO36uDbz3va0a6aFGtgq7orlsbZ7A+1T6HnTzO9tYBQY+yT99mAVWLugh27WVHmd8bhwgHBk+hWHC40Z6mAkFCW9WF4r/BQlfvPQwEwoR1ofSz2E9Qag5hAj1hxCh/hAi1B9ChPpDiFB/CBHqDyFCJbmf80FC33OEr4R9y+ef++x+3xE1v3z2HOEr2XdTPuk7g7Bkf8YPENZvpQvXshuGHiC8yL6ceoDwtfj/ofCmrwcIl8ULV6LABwhP29KFa1ngA4S34oVd8cJJ8ULpTWH5hbvShSfhBT+/cC29sS+78Cx8SZNfeBW+pMkvPAgD8wsn0juIsws/SxeO/pYuXOyEgdmF8l+b5BbepJfD7EL5z01yCzvxnfyZhXP5d2+ZhSfx5TC3cCG+HOYWrqXvDrMLZ+KLRW7hWdp3F16zCm/ii0VVtT2F7cVwPUeQ1v1WE7YXQ3qYCRWyn6YnhAj1hxCh/hAi1B9ChPpDiFB/CBHqDyFC/SFEqD+ECPWHEKH+ECLUH0KE+kOIUH8IEeoPIUL9IUSoP4QI9YcQof4QItQfQoT6Q4hQfwgR6g8hQv0hRKg/hAj1hxCh/hAi1B9ChAP6B1ndUcZ6wYWaAAAAAElFTkSuQmCC" alt="placeholder"></div>
+                <div class="social-icon"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="placeholder"></div>
+                <div class="social-icon"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFWrR5v9UFxMrG0lwAPuJwNMY_YlOgG7f7lA&s" alt="placeholder"></div>
+            </div>
+            <p>05/26/2024 All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
